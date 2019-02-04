@@ -135,7 +135,7 @@ html {
 }
 .top {
   max-width: 100%;
-  height: 65vh;
+  height: 60vh;
   background-image: url('http://i68.tinypic.com/2vd1egw.jpg');
   background-position: center;
   z-index: -3;
@@ -202,7 +202,7 @@ html {
 .bottom {
   display: flex;
   border: 1px solid red;
-  height: 34.75vh;
+  height: 39.75vh;
   justify-content: space-around;
   background-color: #E9ECEF;
   font-family: 'Poppins', sans-serif;
@@ -211,9 +211,41 @@ html {
   text-align: center;
   font-weight: bold;
   color: #212529;
+  font-size: 1.8rem;
+  margin: 3%;
+  border-bottom: 2px dashed #0067F4;
+  padding-bottom: 3%;
 }
 .bottom p {
   color: #5A6169;
   font-family: Roboto;
   line-height: 1.5;
+  font-size: 1.4rem;
+  margin: 3%;
+}
+.why {
+  width: 31%;
+}
+.how {
+  width: 31%;
+}
+.what {
+  width: 31%;
+}
+.what p {
+  font-weight: bold;
+}
+.features {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  color: #5A6169;
+  line-height: 1.5;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.features li {
+  color: #0067F4;
+}
+.features li span {
+  color: #5A6169;
 }
