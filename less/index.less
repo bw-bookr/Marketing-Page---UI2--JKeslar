@@ -217,6 +217,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     background-color: #E9ECEF;
+    margin: 5% 0;
 
 }
 #tabbed-content{
@@ -312,6 +313,11 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @media (max-width: 500px){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+    }
 }
 .title{
         text-align: center;
