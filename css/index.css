@@ -199,6 +199,15 @@ html {
   border-bottom: 2px dashed #0067F4;
   padding-bottom: 3%;
 }
+.bottom h3 {
+  text-align: start;
+  font-weight: bold;
+  font-style: oblique;
+  color: #212529;
+  font-size: 1.6rem;
+  margin: 3%;
+  padding: 3% 0;
+}
 .bottom p {
   color: #5A6169;
   font-family: Roboto;
