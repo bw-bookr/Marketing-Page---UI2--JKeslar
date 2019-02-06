@@ -132,6 +132,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: #E9ECEF;
 }
 .top {
   max-width: 100%;
@@ -170,12 +171,17 @@ html {
   height: 50px;
   width: 150px;
   border-radius: 18px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .button:hover {
   background-color: #0067F4;
   color: #E9ECEF;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .bubble {
+    max-width: 100%;
+  }
 }
 .bottom {
   display: flex;
@@ -188,10 +194,19 @@ html {
   text-align: center;
   font-weight: bold;
   color: #212529;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 3%;
   border-bottom: 2px dashed #0067F4;
   padding-bottom: 3%;
+}
+.bottom h3 {
+  text-align: start;
+  font-weight: bold;
+  font-style: oblique;
+  color: #212529;
+  font-size: 1.6rem;
+  margin: 3%;
+  padding: 3% 0;
 }
 .bottom p {
   color: #5A6169;
@@ -206,18 +221,12 @@ html {
     flex-direction: column;
   }
 }
-.why {
-  width: 31%;
-}
-@media (max-width: 500px) {
-  .why {
-    display: none;
-  }
-}
+.why,
 .how {
   width: 31%;
 }
 @media (max-width: 500px) {
+  .why,
   .how {
     display: none;
   }
@@ -248,31 +257,19 @@ html {
 .features li span {
   color: #5A6169;
 }
-.whatpic {
-  display: none;
-}
-@media (max-width: 500px) {
-  .whatpic {
-    display: initial;
-    margin: 0 15% 3% 15%;
-  }
-}
-.howpic {
-  display: none;
-}
-@media (max-width: 500px) {
-  .howpic {
-    display: initial;
-    margin: 0 15% 3% 15%;
-  }
-}
+.whatpic,
+.howpic,
 .whypic {
   display: none;
 }
 @media (max-width: 500px) {
+  .whatpic,
+  .howpic,
   .whypic {
     display: initial;
-    margin: 0 15% 3% 15%;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 5%;
   }
 }
 .bigpic {
@@ -284,11 +281,41 @@ html {
     display: none;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E9ECEF;
+}
+footer h4 {
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.8rem;
+}
+footer p {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer .icons {
+  flex-direction: row;
+}
+footer .fab {
+  cursor: pointer;
+}
+footer .fab:hover {
+  color: #0067F4;
+}
 .tabs {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #E9ECEF;
+  margin: 5% 0;
 }
 #tabbed-content {
   display: none;
@@ -309,7 +336,8 @@ html {
   height: 50px;
   width: 150px;
   border-radius: 18px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  border: 2px solid #5A6169;
 }
 #tabbed-content li:hover {
   background-color: #0067F4;
@@ -338,4 +366,112 @@ html {
 }
 #tabbed-content .panel.active {
   display: block;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border: 1.5px solid #0067F4;
+  margin: 20px;
+  border-radius: 18px;
+  padding: 0.5% 0;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bookTitle {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.4rem;
+}
+.author {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  margin: 3%;
+  font-weight: 500;
+}
+.img-container {
+  cursor: pointer;
+}
+.filterLink {
+  display: flex;
+  flex-direction: column;
+}
+.genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .genre {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+  }
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 2.4rem;
+  border-bottom: 2px dashed #0067F4;
+  padding: 3%;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: bolder;
+  background-color: #E9ECEF;
+  color: #0067F4;
+  height: 50px;
+  width: 150px;
+  border-radius: 18px;
+  font-size: 1.8rem;
+  border: 2px solid #5A6169;
+  margin: 2% 0;
+}
+.tab:hover {
+  background-color: #0067F4;
+  color: #E9ECEF;
+  cursor: pointer;
+}
+nav {
+  background-color: #E9ECEF;
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  font-size: 1.4rem;
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 3%;
+}
+a:hover {
+  font-size: 1.4rem;
+  color: #0067F4;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.crew {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.introcrew {
+  padding: 5%;
 }
