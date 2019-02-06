@@ -10,7 +10,8 @@
 
 <link href="css/index.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -21,23 +22,21 @@
     <div class="container">
         <div class="top">
                 <div>
-                    <img class='bubble' src="http://i63.tinypic.com/2e2mmuo.png" alt="Comment Bubble">
+                    <img class='bubble animated pulse' src="http://i63.tinypic.com/2e2mmuo.png" alt="Comment Bubble">
                 </div>
                 <div class="explore">
-                    <h2>A Social Platform For Peer Reviewed Text Books</h2><br><br>
-                    <button class='button' onclick="window.location='http://www.google.com';">Explore Now</button>
+                    <h2 class="animated fadeIn">A Social Platform For Peer Reviewed Text Books</h2><br><br>
+                    <button class='button animated fadeIn' onclick="window.location='http://www.google.com';">Explore Now</button>
                 </div>
         </div>
         <div class='bottom'>
                 <section class='why'>
                     <h2>Why?</h2>
                     <p>Bookr makes finding your next favorite book simpler than ever!  First, create an account to get started.  Once logged in, browse through a vast library to find titles that suit your interest.  Next, review commentary and ratings left by other users on your book title of interest.  Finally, dive in to your next favorite book with complete confidence and certainty in your selection.  Just keep it simple, let Bookr do the work and enjoy!</p>
-                    <img class='whypic' src="http://i65.tinypic.com/3149soi.jpg">
                 </section>
                 <section class="how">
                     <h2>How?</h2>
                     <p>Bookr works by bridging the gap between libraries and communities.  Bookr organizes titles tailored to your interest and makes searching for your next favorite book as simple as 1, 2, 3!  Unsure if Bookr's selection will satisfy your wants?  Fallback on the opinions, expertise, and advice of Bookr's entire user community.  With ratings and thoughts from users who have previous indulged in the book titles you are considering, knowing exactly what to expect before indulging yourself will surely save you both time and frustration with an otherwise uncertain selection.</p>
-                    <img class='howpic' src="http://i65.tinypic.com/29fxabn.jpg">
                 </section>
                 <section class="what">
                     <h2>What?</h2>
@@ -49,7 +48,7 @@
                         <li><span>Express Your Thoughts by Contributing Ratings and Reviews</span></li>
                         <li><span>(Potentially follow link to purchase/order book title)</span></li>
                     </ul>
-                    <img class='whatpic' src="http://i66.tinypic.com/15qtce8.jpg">
+                  
                 </section>
         </div>
 
@@ -63,11 +62,31 @@
                     <h2>Efficiency</h2>
                     <p>Bookr makes finding your next favorite book simpler than ever!  First, create an account to get started.  Once logged in, browse through a vast library to find titles that suit your interest.  Next, review commentary and ratings left by other users on your book title of interest.  Finally, dive in to your next favorite book with complete confidence and certainty in your selection.  Just keep it simple, let Bookr do the work and enjoy!</p>
                     <img class='whypic' src="http://i65.tinypic.com/3149soi.jpg">
+                    <div class="insertFooter">
+                            <h4>Follow Us On</h4>
+                            <div class='icons'>
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                                <i class="fab fa-youtube fa-2x"></i>
+                                <i class="fab fa-google-play fa-2x"></i>
+                            </div>    
+                        <p>© Copyright 2019. All rights reserved.</p>
+                    </div>
             </div>
             <div class="panel" id="how">
                     <h2>Accessibility</h2>
                     <p>Bookr works by bridging the gap between libraries and communities.  Bookr organizes titles tailored to your interest and makes searching for your next favorite book as simple as 1, 2, 3!  Unsure if Bookr's selection will satisfy your wants?  Fallback on the opinions, expertise, and advice of Bookr's entire user community.  With ratings and thoughts from users who have previous indulged in the book titles you are considering, knowing exactly what to expect before indulging yourself will surely save you both time and frustration with an otherwise uncertain selection.</p>
                     <img class='howpic' src="http://i65.tinypic.com/29fxabn.jpg">
+                    <div class="insertFooter">
+                            <h4>Follow Us On</h4>
+                            <div class='icons'>
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                                <i class="fab fa-youtube fa-2x"></i>
+                                <i class="fab fa-google-play fa-2x"></i>
+                            </div>    
+                        <p>© Copyright 2019. All rights reserved.</p>
+                    </div>
             </div>
             <div class="panel" id="what">
                 <h2>Features</h2>
@@ -76,12 +95,163 @@
                 <p>Explore User Reviews</p>
                 <p>Express Your Thoughts by Contributing Ratings and Reviews</p>
                         <img class='whatpic' src="http://i66.tinypic.com/15qtce8.jpg">
+                        <div class="insertFooter">
+                                <h4>Follow Us On</h4>
+                                <div class='icons'>
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                    <i class="fab fa-facebook-square fa-2x"></i>
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                    <i class="fab fa-google-play fa-2x"></i>
+                                </div>    
+                            <p>© Copyright 2019. All rights reserved.</p>
+                        </div>
             </div>
         </div>
 
+
+            <!-- TABS COMPONENT -->
+            <!-- <h2 class="title">Bookr's User Favorites</h2>
+            <div class="filterLink">
+                    <div class="genre">
+                      <div data-tab="all" class="tab active-tab">All</div>
+                      <div data-tab="action" class="tab">Action/Adventure</div>
+                      <div data-tab="fantasy" class="tab">Fantasy</div>
+                      <div data-tab="comedy" class="tab">Comedy</div>
+                      <div data-tab="bio" class="tab">(Auto)Biography</div>
+                      <div data-tab="kids" class="tab">Children's</div>
+                    </div>
+            </div> -->
+
+
+<!-- CARDS COMPONENT -->
+<!-- <div class="cards-container">
+ -->
+        <!-- CARD COMPONENTS -->
+        <!-- <div class="card" data-tab="action">
+          <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+          <div class="author"></div>
+            <div class="img-container">
+              <img src="./assets/sir.jpg" />
+            </div>
+            <span class='rating'>Star-Rating</span>
+        </div>
+    
+        <div class="card" data-tab="action">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="action">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="kids">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="kids">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+        
+        <div class="card" data-tab="fantasy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="fantasy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="fantasy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="fantasy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="comedy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="comedy">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+
+        <div class="card" data-tab="bio">
+                <div class="bookTitle">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+                <div class="author"></div>
+                  <div class="img-container">
+                    <img src="./assets/sir.jpg" />
+                  </div>
+                  <span class='rating'>Star-Rating</span>
+        </div>
+    
+        
+    
+      </div> -->
+<!-- //////////////////////////////////////////////////////// -->
         <div class="btmpic">
             <img class='bigpic' src="http://i63.tinypic.com/2u6cllu.jpg">
         </div>
+        <footer>
+            <h4>Follow Us On</h4>
+                <div class='icons'>
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <i class="fab fa-google-play fa-2x"></i>
+                </div>    
+            <p>© Copyright 2019. All rights reserved.</p>
+        </footer>
     </div>
     <script type="text/javascript" src="js/index.js"></script>
 </body>

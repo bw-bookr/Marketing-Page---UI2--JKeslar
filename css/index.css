@@ -132,6 +132,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: #E9ECEF;
 }
 .top {
   max-width: 100%;
@@ -176,6 +177,11 @@ html {
   background-color: #0067F4;
   color: #E9ECEF;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .bubble {
+    max-width: 100%;
+  }
 }
 .bottom {
   display: flex;
@@ -248,31 +254,19 @@ html {
 .features li span {
   color: #5A6169;
 }
-.whatpic {
-  display: none;
-}
-@media (max-width: 500px) {
-  .whatpic {
-    display: initial;
-    margin: 0 15% 3% 15%;
-  }
-}
-.howpic {
-  display: none;
-}
-@media (max-width: 500px) {
-  .howpic {
-    display: initial;
-    margin: 0 15% 3% 15%;
-  }
-}
+.whatpic,
+.howpic,
 .whypic {
   display: none;
 }
 @media (max-width: 500px) {
+  .whatpic,
+  .howpic,
   .whypic {
     display: initial;
-    margin: 0 15% 3% 15%;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 5%;
   }
 }
 .bigpic {
@@ -283,6 +277,70 @@ html {
   .bigpic {
     display: none;
   }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E9ECEF;
+}
+footer h4 {
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.8rem;
+}
+footer p {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer .icons {
+  flex-direction: row;
+}
+footer .fab {
+  cursor: pointer;
+}
+footer .fab:hover {
+  color: #0067F4;
+}
+@media (max-width: 500px) {
+  footer {
+    display: none;
+  }
+}
+.insertFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E9ECEF;
+  margin-top: 3%;
+}
+.insertFooter h4 {
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.8rem;
+}
+.insertFooter p {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.insertFooter .icons {
+  flex-direction: row;
+}
+.insertFooter .fab {
+  cursor: pointer;
+}
+.insertFooter .fab:hover {
+  color: #0067F4;
 }
 .tabs {
   display: flex;
@@ -310,6 +368,7 @@ html {
   width: 150px;
   border-radius: 18px;
   font-size: 1.6rem;
+  border: 2px solid #5A6169;
 }
 #tabbed-content li:hover {
   background-color: #0067F4;
@@ -338,4 +397,41 @@ html {
 }
 #tabbed-content .panel.active {
   display: block;
+}
+.filterLink {
+  display: flex;
+  flex-direction: column;
+}
+.genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 2.4rem;
+  border-bottom: 2px dashed #0067F4;
+  padding: 3%;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: bolder;
+  background-color: #E9ECEF;
+  color: #0067F4;
+  height: 50px;
+  width: 150px;
+  border-radius: 18px;
+  font-size: 1.6rem;
+  border: 2px solid #5A6169;
+  margin: 2% 0;
+}
+.tab:hover {
+  background-color: #0067F4;
+  color: #E9ECEF;
+  cursor: pointer;
 }
