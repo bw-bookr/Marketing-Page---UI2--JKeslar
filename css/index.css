@@ -135,9 +135,8 @@ html {
 }
 .top {
   max-width: 100%;
-  height: 60vh;
+  height: 600px;
   background-image: url('http://i68.tinypic.com/2vd1egw.jpg');
-  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -212,7 +211,7 @@ html {
 }
 @media (max-width: 500px) {
   .why {
-    width: auto;
+    display: none;
   }
 }
 .how {
@@ -220,7 +219,7 @@ html {
 }
 @media (max-width: 500px) {
   .how {
-    width: auto;
+    display: none;
   }
 }
 .what {
@@ -231,7 +230,7 @@ html {
 }
 @media (max-width: 500px) {
   .what {
-    width: auto;
+    display: none;
   }
 }
 .features {
@@ -285,17 +284,24 @@ html {
     display: none;
   }
 }
-.btn {
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #E9ECEF;
+}
+#tabbed-content {
   display: none;
 }
 @media (max-width: 500px) {
-  .btn {
+  #tabbed-content {
     display: initial;
-    margin: 0 32%;
   }
 }
-.mobile-button {
+#tabbed-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Roboto;
   font-weight: bolder;
   background-color: #E9ECEF;
@@ -305,8 +311,31 @@ html {
   border-radius: 18px;
   font-size: 1.6rem;
 }
-.mobile-button:hover {
+#tabbed-content li:hover {
   background-color: #0067F4;
   color: #E9ECEF;
   cursor: pointer;
+}
+#tabbed-content .panel {
+  display: none;
+  background-color: #E9ECEF;
+}
+#tabbed-content .panel h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.8rem;
+  border-bottom: 2px dashed #0067F4;
+  padding: 3%;
+}
+#tabbed-content .panel p {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  margin: 3%;
+  font-weight: 500;
+}
+#tabbed-content .panel.active {
+  display: block;
 }
