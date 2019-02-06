@@ -449,7 +449,7 @@ footer .fab:hover {
 nav {
   background-color: #E9ECEF;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 a {
   font-size: 1.4rem;
