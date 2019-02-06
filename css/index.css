@@ -398,6 +398,37 @@ footer .fab:hover {
 #tabbed-content .panel.active {
   display: block;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border: 1px solid red;
+  margin: 20px;
+  border-radius: 18px;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bookTitle {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  font-size: 1.4rem;
+}
+.author {
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  margin: 3%;
+  font-weight: 500;
+}
 .filterLink {
   display: flex;
   flex-direction: column;
