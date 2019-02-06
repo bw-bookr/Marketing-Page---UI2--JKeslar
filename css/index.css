@@ -443,3 +443,32 @@ footer .fab:hover {
   color: #E9ECEF;
   cursor: pointer;
 }
+nav {
+  background-color: #E9ECEF;
+  display: flex;
+  justify-content: center;
+}
+a {
+  font-size: 2.4rem;
+  color: #5A6169;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 3%;
+}
+a:hover {
+  font-size: 2.4rem;
+  color: #0067F4;
+  font-family: Roboto;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.crew {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.introcrew {
+  padding: 5%;
+}
