@@ -307,41 +307,6 @@ footer .fab {
 footer .fab:hover {
   color: #0067F4;
 }
-@media (max-width: 500px) {
-  footer {
-    display: none;
-  }
-}
-.insertFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #E9ECEF;
-  margin-top: 3%;
-}
-.insertFooter h4 {
-  font-family: 'Poppins';
-  text-align: center;
-  font-weight: bold;
-  color: #212529;
-  font-size: 1.8rem;
-}
-.insertFooter p {
-  color: #5A6169;
-  font-family: Roboto;
-  line-height: 1.5;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.insertFooter .icons {
-  flex-direction: row;
-}
-.insertFooter .fab {
-  cursor: pointer;
-}
-.insertFooter .fab:hover {
-  color: #0067F4;
-}
 .tabs {
   display: flex;
   justify-content: space-around;
