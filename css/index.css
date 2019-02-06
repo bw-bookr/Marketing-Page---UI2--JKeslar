@@ -405,9 +405,10 @@ footer .fab:hover {
   align-items: center;
   width: 200px;
   height: 250px;
-  border: 1px solid red;
+  border: 1.5px solid #0067F4;
   margin: 20px;
   border-radius: 18px;
+  padding: 0.5% 0;
 }
 .cards-container {
   display: flex;
