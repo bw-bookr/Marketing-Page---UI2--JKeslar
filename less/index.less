@@ -141,6 +141,9 @@ html{
 }
 .why, .how {
     width: 31%;
+    @media (max-width: 800px){
+        margin: 2% 0 0 0;
+    }
     @media (max-width: 500px){
         display: none;
     }
@@ -149,6 +152,9 @@ html{
     width: 31%;
     p{
         font-weight: bold;
+    }
+    @media (max-width: 800px){
+        margin: 2% 0 0 0;
     }
     @media (max-width: 500px){
         display: none;
@@ -286,12 +292,18 @@ footer{
     margin: 20px;
     border-radius: 18px;
     padding: .5% 0;
+    @media (max-width: 800px){
+        padding: 5% 0;
+    }
 }
 .cards-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    @media (max-width: 800px){
+        padding: 1% 0;
+    }
 }
 .bookTitle{
         text-align: center;

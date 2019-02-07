@@ -225,6 +225,12 @@ html {
 .how {
   width: 31%;
 }
+@media (max-width: 800px) {
+  .why,
+  .how {
+    margin: 2% 0 0 0;
+  }
+}
 @media (max-width: 500px) {
   .why,
   .how {
@@ -236,6 +242,11 @@ html {
 }
 .what p {
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .what {
+    margin: 2% 0 0 0;
+  }
 }
 @media (max-width: 500px) {
   .what {
@@ -379,11 +390,21 @@ footer .fab:hover {
   border-radius: 18px;
   padding: 0.5% 0;
 }
+@media (max-width: 800px) {
+  .card {
+    padding: 5% 0;
+  }
+}
 .cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .cards-container {
+    padding: 1% 0;
+  }
 }
 .bookTitle {
   text-align: center;
