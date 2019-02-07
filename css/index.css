@@ -411,6 +411,14 @@ footer .fab:hover {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .genre {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3%;
+    padding: 0 15%;
+  }
+}
 @media (max-width: 500px) {
   .genre {
     flex-direction: column;
