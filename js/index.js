@@ -45,13 +45,9 @@ const bookrAuthors ={
 ///////////////////////////////////////////////////////////////////
 //DOM Content Push
 let bookTitles = document.querySelectorAll('.bookTitle');
-bookTitles.forEach((book, i) => {
-  book.textContent = bookrTitles[`title-${i+1}`];
-});
+bookTitles.forEach((book, i) => book.textContent = bookrTitles[`title-${i+1}`]);
 let authors = document.querySelectorAll('.author');
-authors.forEach((book, i) => {
-  book.textContent = bookrAuthors[`author-${i+1}`];
-});
+authors.forEach((book, i) => book.textContent = bookrAuthors[`author-${i+1}`]);
 ///////////////////////////////////////////////////////////////////
 // Tabbed Content
 const tabs = document.querySelector('.tabs');
