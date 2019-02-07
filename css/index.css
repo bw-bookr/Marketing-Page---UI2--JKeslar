@@ -500,6 +500,11 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 2% 0;
+}
+.dev {
+  font-size: 2.6rem;
+  font-style: oblique;
 }
 .introcrew {
   padding: 5%;
