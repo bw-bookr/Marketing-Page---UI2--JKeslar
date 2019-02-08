@@ -189,6 +189,8 @@ html {
   justify-content: space-around;
   background-color: #E9ECEF;
   font-family: 'Poppins', sans-serif;
+  padding-bottom: 3%;
+  margin-top: 3%;
 }
 .bottom h2 {
   text-align: center;
@@ -225,6 +227,12 @@ html {
 .how {
   width: 31%;
 }
+@media (max-width: 800px) {
+  .why,
+  .how {
+    margin: 2% 0 0 0;
+  }
+}
 @media (max-width: 500px) {
   .why,
   .how {
@@ -236,6 +244,11 @@ html {
 }
 .what p {
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .what {
+    margin: 2% 0 0 0;
+  }
 }
 @media (max-width: 500px) {
   .what {
@@ -272,9 +285,20 @@ html {
     margin: 0 5%;
   }
 }
+.icon {
+  max-width: 100%;
+  margin: 0 35%;
+  padding: 7% 0;
+}
+@media (max-width: 800px) {
+  .icon {
+    margin: 0 25%;
+  }
+}
 .bigpic {
   width: 100%;
   height: auto;
+  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .bigpic {
@@ -286,6 +310,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #E9ECEF;
+  margin-bottom: 1%;
 }
 footer h4 {
   font-family: 'Poppins';
@@ -379,11 +404,22 @@ footer .fab:hover {
   border-radius: 18px;
   padding: 0.5% 0;
 }
+@media (max-width: 800px) {
+  .card {
+    padding: 5% 0;
+  }
+}
 .cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .cards-container {
+    padding: 1% 0;
+  }
 }
 .bookTitle {
   text-align: center;
@@ -411,6 +447,14 @@ footer .fab:hover {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .genre {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3%;
+    padding: 0 15%;
+  }
+}
 @media (max-width: 500px) {
   .genre {
     flex-direction: column;
@@ -425,6 +469,12 @@ footer .fab:hover {
   font-size: 2.4rem;
   border-bottom: 2px dashed #0067F4;
   padding: 3%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .title {
+    margin-top: 10%;
+  }
 }
 .tab {
   display: flex;
@@ -471,6 +521,11 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 2% 0;
+}
+.dev {
+  font-size: 2.6rem;
+  font-style: oblique;
 }
 .introcrew {
   padding: 5%;
